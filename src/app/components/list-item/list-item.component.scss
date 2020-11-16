@@ -1,0 +1,48 @@
+
+
+.item {
+  display: flex;
+  margin: 10px 0px;
+  padding: 15px 10px;
+  border: 1px solid gray;
+  .row {
+    display: flex;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: center;
+    &:first-child {
+      align-items: flex-start;
+    }
+    .name {
+      font-size: 16px;
+    }
+    .country {
+      font-size: 12px;
+    }
+    .deg {
+      position: relative;
+      .mark {
+
+        position: absolute;
+        right: -20px;
+        top: 0;
+        font-size: 12px;
+      }
+    }
+    .remove {
+      cursor: pointer;
+    }
+    .icon {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 50px;
+      height: 50px;
+      margin-left: 30px;
+    }
+  }
+}

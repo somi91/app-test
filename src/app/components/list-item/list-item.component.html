@@ -1,0 +1,18 @@
+<div class="item">
+  <div class="col">
+    <span class="name">{{ item.name }}</span>
+    <span class="country">{{ item.country }}</span>
+  </div>
+  <div class="col">
+    <span class="row">
+      <span class="deg">
+        {{ item.deg }}
+        <span class="mark">&deg; C</span>
+      </span>
+      <span class="icon" [ngStyle]="{'background-image': 'url('+ item.icon +')'}"></span>
+
+    </span>
+    <span class="remove" (click)="remove()">x</span>
+  </div>
+
+</div>
